@@ -1,0 +1,34 @@
+<!doctype html>
+<html ng-app="langtranslator" ng-controller="mainCtrl as mct" lang="{{selectedItems}}">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Geolocation</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+		.mainBox{margin:30px auto;}
+  </style>
+ </head>
+<body>
+
+	<div class="mainBox container">
+			
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-5">
+				<select class="form-control" ng-model="selectlang" ng-options="lang.name for lang in langs track by lang.value" ng-change="changelan(selectlang)">
+				</select>
+			</div>
+
+			<div class="col-xs-12">
+				<h1>{{content.ct}}</h1>
+			</div>
+
+	</div>
+  
+ </body>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+<script src="app.js"></script>
+</html>
