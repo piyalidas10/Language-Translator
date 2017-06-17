@@ -27,3 +27,7 @@ Get the selected option value using changelan function and pass selectlang value
 
 
 The name of json files are given like content-ben.json, content-en.json, content-hi.json.
+
+And also apply the following change to the markup:
+
+	<html ng-app="langtranslator" ng-controller="mainCtrl as mct" lang="{{selectedItems}}">
